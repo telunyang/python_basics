@@ -145,6 +145,7 @@ if not os.path.exists(f'{path_save_output_video_to}/{video_id}.mp4'):
 '''
 # 定義剪輯指令
 if choice == 1: # 切割影片 方式1 (設定持續時間，意思是從 ss 開始往後多少時間，速度快)
+    # ffmpeg.exe -ss 00:00:02.00 -i input.mp4 -t 00:00:29.00 -y -c copy output.mp4
     cmd = [
         path_ffmpeg,
         '-ss', ss, 
@@ -154,8 +155,8 @@ if choice == 1: # 切割影片 方式1 (設定持續時間，意思是從 ss 開
         '-c', 'copy', 
         rf'{path_save_output_video_to}/{file_name}.{ext}'
     ]
-elif choice == 2:
-    # 切割影片 方式2 (準確指定結束時間，就是真的從 ss 看到 to，速度慢)
+elif choice == 2: # 切割影片 方式2 (準確指定結束時間，就是真的從 ss 看到 to，速度慢)
+    # ffmpeg.exe -i input.mp4 -ss 00:00:02.00 -to 00:00:49.00 -y -c copy output.mp4
     cmd = [
         path_ffmpeg, 
         '-i', f'{path_save_output_video_to}/{video_id}.{ext}', 

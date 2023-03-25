@@ -29,7 +29,7 @@ print(msg)
 msg = '[{:8.3f}]'.format(12.3456)
 print(msg)
 
-# 文字長度上限
+# 指定文字長度上限 (只有文字，才在格式化字串中加入「.」來限定字串長度)
 msg = '[{:.3}]'.format('Hello')
 print(msg)
 

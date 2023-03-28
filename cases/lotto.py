@@ -43,7 +43,7 @@ while True:
         set_01.add(num)
     else:
         # 為第二選號區加入一個號碼
-        num_02 = get_random_num(6)
+        num_02 = get_random_num(8)
 
         # 離開 while 迴圈
         break

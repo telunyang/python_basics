@@ -17,16 +17,12 @@ num = 10
 if num > 5:
     print("num 大於 5")
 
-
-
 # if else
 name = 'apple'
 if name == 'apple':
     print('名稱是 apple')
 else:
     print("名稱不是 apple")
-
-
 
 # if elif else
 name = 'darren'
@@ -39,14 +35,13 @@ elif name == "carl":
 else:
     print("Not found")
 
-
-
 # 補充: True (真) 和 False (假、偽)
 is_available = True
 if is_available == True:
     print("真")
 else:
     print("假")
+
 # 也可以不用加「 == True」
 if is_available:
     print("真")

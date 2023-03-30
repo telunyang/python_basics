@@ -7,9 +7,6 @@ for i in range(1, 101):
     if i % 3 == 0:
         print(i, end=" ")
 
-# print() 不加參數，單純換行
-print()
-
 # 印出 50 個 = 號
 print("=" * 50)
 

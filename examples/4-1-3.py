@@ -12,7 +12,7 @@ print(result)
 result = f"name: [{name:ㄏ<10}], age: [{age:ㄏ>10}]"
 print(result)
 
-# 靠左對齊、靠右對齊，
+# 置中對齊
 result = f"name: [{name:^10}], age: [{age:^10}]"
 print(result)
 

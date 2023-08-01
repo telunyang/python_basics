@@ -27,6 +27,12 @@ myTuple = ("人", "帥", "任性")
 myTuple[2] = "真好"
 print(myTuple)
 
+# 新增資料到 tuple (類似合併的方式)
+myTuple01 = myTuple01 + ("哈",) # 只加入 1 個字
+print(myTuple01)
+myTuple01 = myTuple01 + ("哈", "哈") # 2 個字以上，最後一個元素不用加「,」
+print(myTuple01)
+
 # 用 for 迴圈逐一輸出資料
 for value in myTuple01:
     print(value)

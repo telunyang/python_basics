@@ -28,7 +28,7 @@ if not os.path.exists(path_folder):
 try:
     # 對 zip 檔案解壓縮 至 指定路徑
     with zipfile.ZipFile("./f-instrument01.zip", 'r') as zf:
-        # 檢視 zip 檔案內容
+        # 檢視 zip 檔案內容 (zf.namelist()[0] 通常是放置檔案的資料夾)
         print(zf.namelist())
 
         # 解壓縮

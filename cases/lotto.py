@@ -21,7 +21,6 @@ https://www.runoob.com/python3/ref-random-randint.html
 
 '''匯入套件(模組)'''
 import random, math
-# 
 
 # 放置第一選號區 6 個號碼的變數
 set_01 = set()
@@ -56,12 +55,16 @@ while True:
         break
 
 # 有關 sorted 可參考: https://www.w3schools.com/python/ref_func_sorted.asp
-print('第一選號區: ', sorted(list(set_01), reverse=False))
+print('第一選號區: ', sorted(set_01, reverse=False))
 print('第二選號區: ', num_02)
 
 '''
-如果
+問題1: 
 把 num_01 = get_random_num(38) 改成 num_01 = random.randint(1, 38)
 把 num_02 = get_random_num(8) 改成 num_02 = random.randint(1, 8)
 結果會是如何呢?
+
+問題2:
+是否有辦法整合「問題1」的方法，建立一個函式，
+函式參數只有一個數字，代表回傳多少組選號結果?
 '''

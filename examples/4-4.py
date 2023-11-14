@@ -1,10 +1,12 @@
 # Tuple 初始化: 第一種
 myTuple01 = ("人", "帥", "得體")
 print(myTuple01)
+print(type(myTuple01))
 
 # Tuple 初始化: 第二種
 myTuple02 = "哆", "啦", "A", "夢"
 print(myTuple02)
+print(type(myTuple02))
 
 # 透過指定索引輸出值
 print( myTuple01[1] )
@@ -32,6 +34,10 @@ myTuple01 = myTuple01 + ("哈",) # 只加入 1 個字
 print(myTuple01)
 myTuple01 = myTuple01 + ("哈", "哈") # 2 個字以上，最後一個元素不用加「,」
 print(myTuple01)
+
+# tuple 之間可用 + 來合併
+myTuple03 = myTuple01 + myTuple02
+print(myTuple03)
 
 # 用 for 迴圈逐一輸出資料
 for value in myTuple01:

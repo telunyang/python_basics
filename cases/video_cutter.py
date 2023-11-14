@@ -31,16 +31,16 @@ https://officeguide.cc/python-zipfile-module-compression-decompression-tutorial-
 測試指令:
 
 - 下載影片
-  - Windows 10: ./yt-dlp.exe https://www.youtube.com/watch?v=zU93rvXBMOY -f "b[ext=mp4]" -o "%(id)s.%(ext)s"
-  - MacOS: ./yt-dlp "https://www.youtube.com/watch?v=zU93rvXBMOY" -f "b[ext=mp4]" -o "%(id)s.%(ext)s"
+  - Windows 10: ./yt-dlp.exe https://www.youtube.com/watch?v=t0igPuDjYUE -f "b[ext=mp4]" -o "%(id)s.%(ext)s"
+  - MacOS: ./yt-dlp "https://www.youtube.com/watch?v=t0igPuDjYUE" -f "b[ext=mp4]" -o "%(id)s.%(ext)s"
 
 - 切割影片 方式1 (設定持續時間，意思是從 ss 開始往後多少時間，速度快)
-  - Windows 10: ./ffmpeg/bin/ffmpeg.exe -ss 00:00:02.00 -i =zU93rvXBMOY.mp4 -t 00:00:34.00 -y -c copy output.mp4
-  - MacOS: ./ffmpeg -ss 00:00:02.00 -i =zU93rvXBMOY.mp4 -t 00:00:34.00 -y -c copy output.mp4
+  - Windows 10: ./ffmpeg/bin/ffmpeg.exe -ss 00:02:43.000 -i t0igPuDjYUE.mp4 -t 00:00:24.000 -y -c copy output.mp4
+  - MacOS: ./ffmpeg -ss 00:02:43.000 -i t0igPuDjYUE.mp4 -t 00:00:24.000 -y -c copy output.mp4
 
 - 切割影片 方式2 (準確指定結束時間，就是真的從 ss 看到 to，速度慢)
-  - Windows 10:./ffmpeg/bin/ffmpeg.exe -i =zU93rvXBMOY.mp4 -ss 00:00:02.00 -to 00:00:36.00 -y -c copy output.mp4
-  - MacOS: ./ffmpeg -i =zU93rvXBMOY.mp4 -ss 00:00:02.00 -to 00:00:36.00 -y -c copy output.mp4
+  - Windows 10:./ffmpeg/bin/ffmpeg.exe -i t0igPuDjYUE.mp4 -ss 00:02:39.5 -to 00:03:06 -y -c copy output.mp4
+  - MacOS: ./ffmpeg -i t0igPuDjYUE.mp4 -ss 00:02:39.5 -to 00:03:06 -y -c copy output.mp4
 
 可能延伸應用:
 [1] [nodejs] Youtube Video Downloader, Splitter and Converter (ubuntu, nodejs, socketio, ffmpeg)

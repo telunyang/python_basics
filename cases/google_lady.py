@@ -1,5 +1,5 @@
 '''
-下載 google 小姐的聲音
+下載 google 小姐的聲音 
 
 Web API 網址:
 https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=zh-TW&q=你的自訂文字

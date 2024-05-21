@@ -25,7 +25,7 @@ print(result)
 
 
 
-'''傳遞變數'''
+'''傳遞參數'''
 
 # 定義函式
 def get_greeting(name):

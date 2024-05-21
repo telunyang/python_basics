@@ -1,11 +1,12 @@
 # 直接從模組中匯入函式
-from myModule import pow, segmentSentence
+from myModule import pow, segment
 
-# 計算幾次方
-num = pow(2, 3)
-print(num)
+if __name__ == '__main__':
+    # 計算幾次方
+    num = pow(2, 3)
+    print(num)
 
-# 簡單斷句
-txt = "I will always love you"
-list_result = segmentSentence(txt)
-print(list_result)
+    # 簡單斷詞
+    txt = "I will always love you"
+    list_result = segment(txt)
+    print(list_result)

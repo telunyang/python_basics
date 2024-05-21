@@ -23,7 +23,7 @@ mySet02.add("對不對?")
 print(mySet01)
 print(mySet02)
 
-# 此時新增重複的，資料不會增加
+# 此時新增重複的資料，不會增加
 mySet01.add("真好玩")
 print(mySet01)
 
@@ -33,18 +33,17 @@ mySet02.update(["子", "丑", "寅"])
 print(mySet01)
 print(mySet02)
 
-# 查詢陣列中有沒有我要的資料: in (只回傳 true 或 false)
-print( "甲" in mySet01 )
-print( "甲" in mySet02 )
-
+# 查詢 set 中有沒有我要的資料: in (只回傳 true 或 false)
 if "乙" in mySet01:
     print("有資料")
 else:
     print("找不到資料")
 
 # 刪除元素: discard() or remove()
+'''如果 .discard() 的元素不存在，不會報錯'''
 mySet01.discard("丙")
 print(mySet01)
+'''如果 .remove() 的元素不存在，會報錯 (KeyError)'''
 mySet02.remove("丑")
 print(mySet02)
 

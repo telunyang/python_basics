@@ -1,11 +1,12 @@
 # 匯入模組
 import myModule
 
-# 計算幾次方
-num = myModule.pow(2, 3)
-print(num)
+if __name__ == '__main__':
+    # 計算幾次方
+    num = myModule.pow(2, 3)
+    print(num)
 
-# 簡單斷句
-txt = "I will always love you"
-list_result = myModule.segmentSentence(txt)
-print(list_result)
+    # 簡單斷詞
+    txt = "I will always love you"
+    list_result = myModule.segment(txt)
+    print(list_result)

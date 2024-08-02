@@ -87,6 +87,8 @@ if not os.path.exists('./ffmpeg/bin/yt-dlp.exe'):
 # 設定 YouTube 影片 id 和 video 連結
 video_id = 't0igPuDjYUE'
 video_url = f'https://www.youtube.com/watch?v={video_id}'
+# video_id = '509549031488846'
+# video_url = f'https://www.facebook.com/JesseTang11/videos/{video_id}'
 
 # 判斷影片是否已經下載
 if not os.path.exists(f'./{video_id}.mp4'):

@@ -14,7 +14,10 @@ import os, zipfile, wget
 # zip 檔案若是不存在
 if not os.path.exists("./f-instrument01.zip"):
     # 下載 zip
-    wget.download('https://www.dropbox.com/s/0cm2vqmnbasz32t/f-instrument01.zip?dl=1')
+    wget.download(
+        'https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip',
+        './ffmpeg.zip'
+    )
 
 
 # 存放路徑 (將解壓縮的內容另存到這裡)
@@ -27,7 +30,7 @@ if not os.path.exists(path_folder):
 
 try:
     # 對 zip 檔案解壓縮 至 指定路徑
-    with zipfile.ZipFile("./f-instrument01.zip", 'r') as zf:
+    with zipfile.ZipFile("./ffmpeg.zip", 'r') as zf:
         # 檢視 zip 檔案內容 (zf.namelist()[0] 通常是放置檔案的資料夾)
         print(zf.namelist())
 

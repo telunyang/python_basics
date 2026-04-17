@@ -1,0 +1,2 @@
+ollama==0.6.1
+requests==2.33.1
